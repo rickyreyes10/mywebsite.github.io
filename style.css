@@ -1,0 +1,236 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('wb.jpg');
+    background-size: cover;
+}
+
+header,
+footer,
+main,
+.sidebar-left,
+.sidebar-right,
+div {
+    border-radius: 35px;
+}
+
+header,
+footer {
+    background-color: #ffffff49;
+    text-align: center;
+    padding: 20px;
+    color: rgb(235, 230, 230);
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+footer p a {
+    color: blue;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+
+.sidebar-left,
+.sidebar-right {
+    width: 200px;
+    padding: 10px;
+}
+
+.sidebar-left {
+    padding: 10px;
+    background-color: #9ed2f9b4;
+}
+
+.sidebar-left h2 {
+    font-size: 1.2em;
+    color: #073636;
+    margin-bottom: 10px;
+}
+
+.sidebar-left ul {
+    list-style-type: disc;
+}
+
+
+.sidebar-left ul li {
+    margin-bottom: 8px;
+}
+
+.sidebar-left ul li a {
+    color: blue;
+    text-decoration: none;
+}
+
+.sidebar-left ul li a:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+
+.sidebar-right {
+    padding: 10px;
+    background-color: #9ed2f9b4;
+}
+
+.sidebar-right h2 {
+    font-size: 1.2em;
+    color: rgb(177, 50, 50);
+}
+
+.sidebar-right ol {
+    list-style-type: decimal;
+    /* numbered list for the dream jobs */
+}
+
+.sidebar-right ul {
+    list-style-type: disc;
+    /* bullet points for the education list*/
+}
+
+.sidebar-right a {
+    color: blue;
+    text-decoration: none;
+}
+
+.sidebar-right a:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+
+main {
+    margin: 0 15px;
+    /*adds a gap on both the left and right sides*/
+    display: flex;
+    /* flexbox */
+    flex-direction: column;
+    /*stack elements vertically*/
+    justify-content: center;
+    /*center content horizontally*/
+    align-items: center;
+    /*center content vertically*/
+    flex-grow: 1;
+    padding: 20px;
+    background-color: rgba(172, 255, 200, 0.285);
+}
+
+.headshot {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.zebra-table {
+    width: auto;
+    /* Keep the width auto or adjust as needed */
+    border-collapse: collapse;
+    /* Ensures borders between cells collapse together */
+    font: normal 13px Arial, sans-serif;
+    /* Set font styling */
+    margin: 0 auto;
+    /* Center the table horizontally */
+    border-spacing: 0;
+    /* Removes any spacing between cells */
+}
+
+.zebra-table thead th {
+    background-color: #DDEFEF;
+    color: #336B6B;
+    padding: 15px;
+    text-align: center;
+    text-shadow: 1px 1px 1px gray;
+    border-bottom: 2px solid #336B6B;
+}
+
+/* bottom table corners rounding */
+.zebra-table tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 15px;
+}
+
+.zebra-table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 15px;
+}
+
+/*top table corners rounding*/
+.zebra-table thead th:first-child {
+    /* Top-left corner of the first column */
+    border-top-left-radius: 15px;
+}
+
+.zebra-table thead th:last-child {
+    /* Top-right corner of the last column */
+    border-top-right-radius: 15px;
+}
+
+
+.zebra-table tr:nth-child(odd) {
+    background-color: #b8d1f3;
+}
+
+.zebra-table tr:nth-child(even) {
+    background-color: #fbbdb7;
+}
+
+.zebra-table tbody td {
+    padding: 15px;
+    text-align: left;
+}
+
+.zebra-table tbody td a {
+    color: blue;
+    text-decoration: none;
+}
+
+.zebra-table tbody td a:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+
+.zebra-table tbody tr:hover {
+    background-color: #8d8d8d;
+}
+
+caption {
+    padding: 15px;
+    caption-side: top;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5em;
+    color: #336B6B;
+    background-color: #DDEFEF;
+    border-radius: 15px;
+    text-shadow: 1px 1px 2px gray;
+    margin-bottom: 10px;
+    border: 2px solid #336B6B;
+}
+
+section {
+    width: 100%;
+    text-align: center;
+}
+
+.favorite-quote {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #dad8d89f;
+    font-style: italic;
+    font-size: 1.2em;
+    color: #030303;
+    text-align: center;
+}
+
+.favorite-quote p {
+    margin: 0;
+}
+
+.highlight {
+    color: red;
+    font-weight: bold;
+}
